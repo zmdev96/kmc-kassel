@@ -1,0 +1,301 @@
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Responsive CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+
+@media(max-width:767px){ /* Extra Small*/
+  /* navbar */
+  .nav-top .content {
+    border-radius: 50px !important;
+  }
+  /* home*/
+  .home .skdslider{
+  height: 200px !important;
+	}
+  .home .skdslider .slide-desc  {
+    position: absolute;
+    bottom: 10%;
+    width: 60%;
+	}
+  .home .skdslider .slide-desc > h2 {
+		font-size: 1.8rem;
+		margin-bottom: 10px;
+		margin-top: 5px;
+    line-height: 20px;
+	}
+  .home .skdslider .slide-desc > span {
+    color: #20292f;
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    line-height: 0px !important;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+  }
+	.home .skdslider .slide-desc > p {
+		font-size: 14px;
+		line-height: 15px;
+		margin-top: 5px;
+	}
+  /*nav top */
+
+  /* team*/
+  .team .wrapper .content .card{
+    height: 275px !important
+  }
+  .team .wrapper .content .card .top{
+    height: 30% !important;
+  }
+  .team .wrapper .content .card .bottom{
+    height: 70% !important;
+    padding-top: 55px;
+  }
+
+  /* contact */
+  .contact .wrapper .content .contact-section .contact-from .contact-title h3 {
+    text-align: center;
+  }
+
+  /* impressum */
+  .impressum .wrapper .content .important .background-content {
+    opacity: 0;
+  }
+
+  /* team page */
+  .team .wrapper .content .about-us img{
+    width: 90%;
+  }
+
+}
+@media(min-width:768px) and (max-width:991px){ /* Small*/
+  /* navbar*/
+  .navbar .navbar-nav>li>a{
+    font-size: 1.4rem;
+    line-height: 35px;
+  }
+  /* home */
+  .home .skdslider .slide-desc{
+    position: absolute;
+    bottom: 20%;
+    width: 60%;
+	}
+  .home .skdslider .slide-desc > h2 {
+		font-size: 2.5rem;
+	}
+  /* nav top */
+  .nav-top .content .box-content span{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .nav-top .content .box-content h3{
+    font-size: 2rem;
+  }
+
+  /* breadcrumb */
+  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+    font-size: 40px;
+  }
+
+}
+@media(max-width:991px){ /* Extra Small && Small*/
+  /* navbar*/
+  .navbar-absolute{
+    position:unset;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .navbar{
+    border-color: transparent !important;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  .navbar-brand {
+    padding: 15px 0px;
+  }
+  .navbar .navbar-brand img{
+    height: 60px;
+    margin-top: -15px;
+  }
+  /* home */
+  .home .skdslider a{
+    display: none !important;
+  }
+  /* nav top */
+  .nav-top .content {
+    background-image: linear-gradient(108deg,#0fb7dd 0%,rgb(160, 229, 249) 100%);
+    border-radius: 0px 50px 0px;
+    box-shadow: 0px 20px 50px 0px rgba(0,121,255,0.2);
+    margin: 10px auto;
+
+  }
+  .nav-top .content .box-content{
+    background-image:none;
+    border-radius:0px;
+    overflow: hidden;
+    box-shadow: none !important;
+    height: auto;
+    margin: 0 !important;
+  }
+  .nav-top .content .tow .box-content .right  {
+    padding-left: 15px;
+  }
+  .blog .content .content-header .right-line span {
+    width: 85%;
+  }
+  .features .wrapper .right .content{
+    margin-top: 0px;
+  }
+
+   /* breadcrumb */
+  .breadcrumb .breadcrumb_iner{height: 100px;}
+
+  /* services*/
+  .services .content{
+    text-align: center;
+  }
+  .services .content  .box-content{
+    margin-bottom: 25px !important;
+  }
+  .services .content .left .box-content{
+    display: flex!important;
+    flex-direction: row !important;
+    text-align: left;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 40px;
+
+  }
+  .services .content .right .box-content{
+    display: flex!important;
+    flex-direction: row-reverse!important;
+    text-align: right;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 40px;
+
+  }
+  .services .content  .left .box-content .label-icon span{
+    margin-left: 0px !important;
+    margin-right: 20px;
+  }
+  .services .content  .right .box-content .label-icon span{
+    margin-left: 20px !important;
+    margin-right: 0px;
+  }
+  .services .content .center img{
+    margin: 5px auto 15px !important;
+    padding-top: 0px !important;
+   }
+   .maps{
+     margin-top: 0px;
+   }
+   /* contact*/
+   .contact .wrapper .content .contact-section .form-section .information{
+     padding-left: 0px;
+   }
+
+  /* team */
+.team .wrapper .content .about-us img{
+  width: 70%;
+  }
+.team .wrapper .content .our-history .image img {
+  width: 85%;
+  height: 300px;
+}
+
+.team .wrapper .content .our-history .our-history-content {
+  padding: 10px 20px;
+}
+
+.doctor-p .wrapper .content .our-history .image img {
+  width: 85%;
+  height: 300px;
+}
+
+.doctor-p .wrapper .content .our-history .our-history-content {
+  padding: 10px 20px;
+}
+
+.team .wrapper .content .doctors .doctors-row {
+  margin-bottom: 0;
+}
+
+.team .wrapper .content .doctors .doctors-row .doctor {
+  margin-bottom: 20px;
+}
+
+.online-medical .wrapper .content .form-section{margin-top: 0;}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { /*midune*/
+  /* home */
+  .home .skdslider .slide-desc{
+    position: absolute;
+    bottom: 35%;
+    width: 60%;
+	}
+  /* services*/
+  .services .content  .center img{
+    padding-top: 100px !important;
+  }
+
+  /* team */
+  .team .wrapper .content .our-history .image img{
+    height: 670px;
+  }
+
+  .doctor-p .wrapper .content .our-history .image img{
+    height: 670px;
+  }
+
+  /* blog*/
+  .blog-p .item .caption-content .footer-info{display: block;}
+}
+
+@media(min-width:1200px){ /* Large */
+
+}
+
+@media(min-width:992px){ /* Large && Medium */
+  .nav-top{
+    position: relative;
+    top: -25px;
+  }
+  .navbar ul .hvr-u-f-c:before{content:"";position:absolute;z-index:-1;left:51%;right:51%;bottom:0;background:#0fb7dd;height:2px;-webkit-transition-property:left, right;transition-property:left, right;-webkit-transition-duration:0.3s;transition-duration:0.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;}
+  .navbar ul .hvr-u-f-c:hover:before,
+  .navbar ul .hvr-u-f-c:focus:before,
+  .navbar ul .hvr-u-f-c:active:before{left:0;right:0;}
+  .home .skdslider .slide-desc > p{
+    font-size: 2rem;
+  }
+  .home .skdslider .slide-desc > span{
+    line-height: 75px;
+    font-size: 2.5rem;
+  }
+  .home .skdslider .slide-desc{
+    bottom: 35%;
+  }
+}
+
+@media (max-width: 576px) { /* Extra Small*/
+  /* breadcrumb */
+  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+    font-size: 35px;
+  }
+
+  /* team */
+  .team .wrapper .content .about-us img{
+    width: 100%;
+  }
+
+  .online-medical .wrapper .content .form-online-medical .btn span{display: none;}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+    font-size: 35px;
+  }
+
+  .online-medical .wrapper .content .form-online-medical .btn span{padding-left: 1px;}
+}

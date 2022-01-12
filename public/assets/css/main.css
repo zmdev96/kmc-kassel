@@ -1,0 +1,1760 @@
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Body CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Cantata One',Georgia,"Times New Roman",serif !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #555;
+  overflow: hidden;
+}
+p{
+  font-size: 15px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Page Loder CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.page-loder {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 99999;
+}
+
+.page-loder .lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 32px 32px;
+  transform-origin: 32px 32px;
+}
+
+.page-loder .lds-heart div {
+  top: 23px;
+  left: 19px;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: #0fb7dd;
+  -webkit-animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.page-loder .lds-heart div:after,
+.page-loder .lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: #0fb7dd;
+}
+
+.page-loder .lds-heart div:before {
+  left: -17px;
+  border-radius: 50% 0 0 50%;
+}
+
+.page-loder .lds-heart div:after {
+  top: -17px;
+  border-radius: 50% 50% 0 0;
+}
+
+@-webkit-keyframes lds-heart {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  5% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  39% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes lds-heart {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  5% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  39% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Breadcrumb for pages CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.breadcrumb_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.breadcrumb {
+  margin-bottom: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumb:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(108deg, #0fb7dd 0%, #a0e5f9 100%);
+  content: "";
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.breadcrumb .breadcrumb_iner {
+  height: 125px;
+  width: 100%;
+  display: table;
+}
+
+.breadcrumb .breadcrumb_iner .breadcrumb_iner_item {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.breadcrumb .breadcrumb_iner .breadcrumb_iner_item p {
+  font-size: 15px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.breadcrumb .breadcrumb_iner .breadcrumb_iner_item span {
+  margin: 0px 5px;
+  font-size: 12px;
+}
+
+/* end breadcrumb */
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Navbar CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.navbar-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 240;
+}
+
+.navbar {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  margin-top: 10px;
+}
+
+.navbar .navbar-brand {
+  color: #20292f;
+}
+.navbar .navbar-brand img{
+  height: 67px;
+  margin-top: -20px;
+}
+
+.navbar .navbar-nav > li > a {
+  color: #20292f;
+  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold !important;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  line-height: 40px;
+  padding: 10px 10px;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  color: #0fb7dd;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}
+.navbar .navbar-toggle{
+  margin-top: 15px;
+
+}
+.navbar-right .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+.dropdown-menu>li>a{
+  padding: 7px 20px 7px 10px;
+  font-size: 16px;
+}
+
+.nav img {
+  max-width: none;
+  width: 30px;
+  height: 30px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Home CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+#slider {
+  margin: 0;
+  padding: 0;
+}
+
+.home .skdslider {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.home .skdslider .slide {
+  display: none;
+}
+
+.home .skdslider .slide img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.home .skdslider .slide-desc {
+  padding: 0 15px 0 15px;
+  position: absolute;
+  bottom: 40%;
+  width: 50%;
+  display: inline-block;
+}
+
+.home .skdslider .slide-desc > h2 {
+  color: #0fb7dd;
+  font-family: 'Oswald';
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.home .skdslider .slide-desc > span {
+  color: #20292f;
+  font-family: 'Oswald';
+  font-size: 2rem;
+  line-height: 40px;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+
+.home .skdslider .slide-desc > p {
+  color: #20292f;
+  font-family: 'Oswald';
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.home .skdslider .info-img {
+  width: 300px !important;
+}
+
+.home .skdslider a.prev {
+  background: url("image/left.png") no-repeat scroll 0 0 transparent;
+  width: 35px;
+  height: 35px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  margin-top: -17px;
+}
+
+.home .skdslider a.next {
+  background: url("image/right.png") no-repeat scroll 0 0 transparent;
+  width: 35px;
+  height: 35px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  margin-top: -17px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Nav top CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.nav-top .content .box-content {
+  background-image: linear-gradient(108deg, #0fb7dd 0%, #a0e5f9 100%);
+  border-radius: 0 50px 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 121, 255, 0.2);
+  box-shadow: 0px 20px 50px 0px rgba(0, 121, 255, 0.2);
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.nav-top .content .box-content .img-content {
+  background-image: linear-gradient(108deg, #fff 0%, #edf2f5 100%);
+  width: 85px;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 5px #fff;
+  box-shadow: 0px 0px 0px 5px #fff;
+  margin: 10px auto;
+}
+
+.nav-top .content .box-content h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.nav-top .content .tow .box-content  {
+  border-radius: 0px;
+  background-image: none;
+  background-color: orange
+}
+.nav-top .content .tow .box-content h3 {
+  color: #555;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.nav-top .content .tow .box-content p {
+  color: #555;
+  font-size: 16px;
+}
+.nav-top .content .tow .box-content span {
+  color: #555;
+  font-size: 16px;
+  display: block;
+}
+.nav-top .content .tow .box-content .right  {
+  padding-left: 150px;
+}
+.nav-top .content .tow .box-content .right span {
+  margin: 5px 0px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Services CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.services {
+  margin: 20px auto;
+}
+
+.services .header-title h2 {
+  font-size: 3rem;
+  color: #0fb7dd;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 3px;
+}
+
+.services .content {
+  margin-top: 50px;
+}
+
+.services .content .left .box-content {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+  -ms-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
+  text-align: right;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 40px;
+}
+
+.services .content .right .box-content {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  text-align: left;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 40px;
+}
+
+.services .content .box-content div {
+  display: inline-block;
+}
+
+.services .content .box-content h6 {
+  display: inline-block;
+  color: #222222;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.services .content .box-content p {
+  color: #555;
+}
+
+.services .content .box-content .label-icon span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  margin-left: 20px;
+  text-align: center;
+}
+
+.services .content .right .box-content .label-icon span {
+  margin-left: 0px !important;
+  margin-right: 20px;
+}
+
+.services .content .center img {
+  padding-top: 45px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 01.News CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.news {
+  margin: 20px auto;
+}
+
+.news .header-title h2 {
+  font-size: 3rem;
+  color: #0fb7dd;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 3px;
+}
+
+.news .content {
+  margin-top: 50px;
+}
+.news .box{
+  position:relative;
+  height:300px;
+  background:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid #0fb7dd;
+  padding: 0px 10px;
+  margin-bottom: 25px;
+}
+.news .box:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;;
+  height:100%;
+  background-color:#e2e2e226;
+  pointer-events: none;
+  opacity: 1;
+  transition: 0.75s;
+}
+
+.news .box:before{
+  content: '';
+  position: absolute;
+  top: -02px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  transform: skew(2deg,2deg);
+  z-index: -1;
+}
+.news .one:before{
+  background: linear-gradient(315deg,#ff0057,#0fb7dd);
+}
+.news .tow:before{
+  background: linear-gradient(315deg,#00bcd4 ,#e6632b);
+}
+.news .three:before{
+  background: linear-gradient(315deg,#e91e63,#e6632b);
+}
+.news .for:before{
+  background: linear-gradient(315deg,#B041FF,#ffc107);
+}
+.news .box .content{
+  position:relative;
+  padding:10px 10px 0px 10px;
+  margin-top: 0px;
+  overflow: hidden;
+
+}
+
+.news .box .content h3{
+  margin: 60px 0px 0px 0px ;
+  padding: 0;
+  font-size: 34px;
+  font-weight: 500;
+  color:#0fb7dd;
+}
+.news .box .content p{
+  margin: 0;
+  padding: 0;
+  font-size:16px;
+  margin-top: 10px;
+
+}
+.news .box .content a{
+  position: relative;
+  margin: 10px 0 0 ;
+  padding: 7px 20px;
+  text-decoration: none;
+  color: #0fb7dd;
+  transition: 0.75s;
+  display: inline-block;
+  border: 1px solid #0fb7dd;
+  transform: translateY(-40px);
+  opacity: 0;
+  visibility: hidden;
+  font-size: 18px;
+}
+.news .box:hover .content a{
+
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.news .box .content a:hover{
+  transition: 0.5s;
+  background-color: #0fb7dd;
+  color:#fff;
+  border: 1px solid #0fb7dd;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Team CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.team {
+  background: url(../img/photoshop/teal-orange) no-repeat scroll 0 0/cover;
+  background-size: cover;
+  position: relative;
+  background-position: top center;
+  height: auto;
+}
+
+.team .wrapper {
+  margin-top: 40px;
+}
+
+.team .header-title h2 {
+  font-size: 3rem;
+  color: #0fb7dd;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 3px;
+}
+
+.team .wrapper .content .card {
+  height: 350px;
+  border-radius: 25PX;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.team .wrapper .content .card .top {
+  height: 45%;
+  background-image: linear-gradient(108deg, #0fb7dd 0%, #a0e5f9 100%);
+}
+
+.team .wrapper .content .card .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.team .wrapper .content .card .center img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 0px 5px #24bee1;
+  box-shadow: 0px 0px 0px 5px #24bee1;
+  border: 4px solid #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team .wrapper .content .card:hover .center img {
+  -webkit-transform: scale(1.1) rotate(-3deg);
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.team .wrapper .content .card .bottom {
+  height: 55%;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 75px;
+}
+
+.team .wrapper .content .card .bottom h3 {
+  color: #0fb7dd;
+  font-size: 2rem;
+}
+.team .wrapper .content .card .bottom p{
+  color: #555;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Features CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.features {
+  background: url(../img/photoshop/teal-orange) no-repeat scroll 0 0/cover;
+  background-size: cover;
+  position: relative;
+  background-position: top center;
+  height: auto;
+}
+
+.features .wrapper {
+  margin-top: 40px;
+}
+
+.features .header-title h2 {
+  font-size: 3rem;
+  color: #0fb7dd;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 3px;
+}
+
+.features .wrapper .left .content {
+  position: relative;
+}
+
+.features .wrapper .left .content svg {
+  width: 100%;
+  height: 100%;
+}
+
+.features .wrapper .right .content {
+  margin-top: 150px;
+}
+
+.features .wrapper .right .content h3 {
+  color: #0fb7dd;
+  font-size: 2.5rem;
+}
+
+.features .wrapper .right .content p {
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Blog CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.blog {
+  margin-top: 20px;
+}
+
+.blog .wrapper {
+  margin-top: 10px;
+  position: relative;
+}
+
+.blog .header-title h2 {
+  font-size: 3rem;
+  color: #0fb7dd;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 3px;
+}
+
+.blog .content .content-header {
+  margin-bottom: 10px;
+}
+
+.blog .content .content-header h4 {
+  display: table-cell;
+  white-space: pre;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4em;
+  color: #555;
+  letter-spacing: 0.3px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.blog .content .content-header .right-line {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  width: 90%;
+}
+
+.blog .content .content-header .right-line span {
+  width: 95%;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  top: 1px;
+}
+
+.blog .content .content-header .right-line span::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 7px;
+  height: 7px;
+  top: -3px;
+  border-radius: 4px;
+  background: #e5e5e5;
+}
+
+.blog .owl-carousel .item {
+  margin: 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 250px;
+}
+
+.blog .owl-carousel .item .img-content img {
+  border-radius: 3px;
+  max-height: 170px;
+}
+
+.blog .owl-carousel .item .caption-content {
+  padding: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  bottom: -10px
+}
+
+.blog .owl-carousel .item .caption-content h4 {
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: #20292f;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog .owl-carousel .item:hover .caption-content h4  {
+  color: #0fb7dd;
+}
+
+
+.owl-carousel .owl-nav {
+  position: absolute !important;
+  top: -50px;
+  right: 0px;
+  width: 50px;
+  text-align: center;
+}
+
+.blog .owl-carousel .owl-nav button {
+  outline: none;
+}
+
+.blog .owl-carousel .owl-nav button span,
+.blog .owl-carousel .owl-nav button span {
+  font-size: 40px;
+  color: #0fb7dd;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Maps CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.maps {
+  margin-top: 40px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Footer CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.footer .item h3 {
+  font-size: 2rem;
+  color: #0fb7dd;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.footer .item ul {
+  list-style-type: none;
+  margin-left: -40PX;
+  font-family: 'Poppins',Georgia,"Times New Roman",serif !important;
+  color: #808080;
+}
+
+.footer .item .list-content ul {
+  margin-left: -55PX;
+}
+
+.footer .item .list-content ul li {
+  margin-top: 13px;
+}
+
+.footer .item .list-content ul li a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.footer .item .list-content ul li::before {
+  content: '\f054 ';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #808080;
+  padding-right: 0.5em;
+  position: relative;
+  top: 0px;
+  left: 0;
+}
+.footer .opnning-hours .list-content ul li::before {
+  content: '\f017 ';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #808080;
+  padding-right: 0.5em;
+  position: relative;
+  top: 0px;
+  left: 0;
+}
+
+.footer .item ul li {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+.footer .item span {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(108deg, #0fb7dd 0%, #a0e5f9 100%);
+  line-height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 13px;
+}
+
+.footer .item span:hover {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  color: #0fb7dd;
+  background: #fff;
+  line-height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  -webkit-box-shadow: 0px 1px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 1px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .item span i {
+  font-size: 18px;
+}
+
+.footer .item button {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.footer .item button:hover {
+  background: linear-gradient(108deg, #0fb7dd 0%, #a0e5f9 100%);
+  color: #fff;
+  border-color: #0fb7dd;
+}
+
+.copy-right {
+  background: linear-gradient(108deg, #0fb7dd 0%, #a0e5f9 100%);
+  color: #20292f;
+  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 2.7rem;
+  font-weight: bold !important;
+  line-height: 40px;
+  padding: 10px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Eroor Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.error {
+  color: #0fb7dd;
+  font-size: 9rem;
+  position: relative;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Contact Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+/* start breadcrumb */
+.contact .breadcrumb_bg {
+  background-image: url("../img/breadcrumb.png");
+}
+
+/* end breadcrumb */
+/* start contact section */
+.contact .wrapper .content .contact-section {
+  margin-top: 0px;
+}
+
+.contact .wrapper .content .contact-section .form-section {
+  padding: 25px 0px;
+}
+
+.contact .wrapper .content .contact-section .form-section .information {
+  margin-top: 60px;
+  padding-left: 125px;
+}
+
+.contact .wrapper .content .contact-section .form-section .information .info {
+  margin-bottom: 30px;
+}
+.contact .wrapper .content .contact-section .form-section .information .info h5,
+.contact .wrapper .content .contact-section .form-section .information .info span {
+  padding-left: 10px;
+}
+.contact .wrapper .content .contact-section .form-section .information .info i {
+  font-size: 3.5rem;
+  color: #0fb7dd;
+}
+
+.contact .wrapper .content .contact-section .form-section .information .info h5 {
+  color: #6c6969;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact .wrapper .content .contact-section .form-section .information .info span {
+  display: block;
+  color: #a9a8a8;
+  font-size: 15px;
+}
+.contact .wrapper .content .contact-section .form-section .information .tow .info span {
+  padding: 4px 10px;
+}
+
+.contact .wrapper .content .contact-section .contact-from .contact-title h3 {
+  font-size: 3rem;
+  color: #0fb7dd;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 3px;
+}
+
+.contact .wrapper .content .contact-section .form-section .contact-from .form-control {
+  border-radius: 5px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: 0 0;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-align: left;
+  height: 45px;
+}
+
+.contact .wrapper .content .contact-section .form-section .contact-from .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #0fb7dd;
+  background-color: #fff;
+}
+
+.contact .wrapper .content .contact-section .form-section .contact-from textarea.form-control {
+  height: 165px;
+}
+
+.contact .wrapper .content .contact-section .form-section .contact-from .btn {
+  padding: 10px 11px;
+  font-size: 13px;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0fb7dd;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+
+.contact .wrapper .content .contact-section .form-section .contact-from .btn:hover {
+  background-color: #69d0f0;
+  color: #fff;
+}
+
+.contact .error i.fa {
+  color: red;
+  position: absolute;
+  right: 15px;
+  top: -42px;
+  display: none;
+  font-size: 40px;
+}
+
+.contact .message-feld .error i.fa {
+  color: red;
+  position: absolute;
+  right: 15px;
+  top: -162px;
+  display: none;
+  font-size: 40px;
+}
+
+.contact .message-feld .error .error-msg {
+  font-size: 16px;
+  position: absolute;
+  top: -150px;
+  right: 67px;
+  color: red;
+}
+
+.contact .error-list {
+  display: none;
+}
+
+.contact .error .error-msg {
+  font-size: 16px;
+  position: absolute;
+  top: -30px;
+  right: 67px;
+  color: red;
+}
+
+.contact .error i.fa-check-circle-o {
+  color: green;
+}
+
+.contact .message-feld .error i.fa-check-circle-o {
+  color: green;
+}
+.contact .alert{
+  padding: 10px;
+}
+
+/* end contact section */
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Medicines Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+/* start breadcrumb */
+.online-medical .breadcrumb_bg {
+  background-image: url("../img/medicina-cover.jpg");
+}
+
+/* end breadcrumb */
+/* start online-medical section */
+.online-medical .wrapper .content .section_padding {
+  padding: 25px 0px;
+}
+
+.online-medical .wrapper .content .form-section {
+  margin-top: 40px;
+}
+
+.online-medical .wrapper .content .form-section .f-sec {
+  -webkit-box-shadow: 0px 0px 7px #cccccc7a;
+  box-shadow: 0px 0px 7px #cccccc7a;
+  padding: 30px 30px 20px;
+}
+
+.online-medical .wrapper .content .form-section .online-medical-title {
+  font-size: 3rem;
+  color: #0fb7dd;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 3px;
+  margin-bottom: 30px;
+}
+
+.online-medical .wrapper .content .form-section img {
+  width: 100%;
+  height: 520px;
+  margin-top: 0;
+}
+
+.online-medical .wrapper .content .form-online-medical .form-group {
+  margin-bottom: 30px;
+}
+
+.online-medical .wrapper .content .form-online-medical .form-control {
+  border-radius: 5px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: #f7f8fa !important;
+  border: 1px solid #f7f8fa;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 45px;
+}
+
+.online-medical .wrapper .content .form-online-medical .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #0fb7dd;
+  background-color: #fff;
+}
+
+.online-medical .wrapper .content .form-online-medical .btn {
+  color: #fff!important;
+  background-color: #0fb7dd!important;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 11px;
+  height: 45px;
+}
+
+.online-medical .wrapper .content .form-online-medical .btn span{padding-left: 5px}
+
+.online-medical .wrapper .content .form-online-medical .btn:hover {
+  background-color: #69d0f0 !important;
+  color: #fff!important;
+}
+
+.online-medical .wrapper .content .form-online-medical .btn:focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+.online-medical .wrapper .content .form-online-medical .medicine-list {
+  border-radius: 12px;
+  padding-left: 18px;
+  font-size: 13px;
+  background: #f7f8fa !important;
+  border: 1px solid #f7f8fa;
+  height: 179.5px !important;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+.online-medical .wrapper .content .form-online-medical .medicine-list .medicine-dosage {
+  position: relative;
+}
+
+.online-medical .wrapper .content .form-online-medical .medicine-list h5 {
+  color: gray;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  font-weight: 600;
+}
+
+.online-medical .wrapper .content .form-online-medical .medicine-list label {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.online-medical .wrapper .content .form-online-medical .medicine-list input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 0;
+  border: 2px solid gray;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.online-medical .wrapper .content .form-online-medical .medicine-list input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  left: 6px;
+}
+
+.online-medical .error i.fa {
+  color: red;
+  position: absolute;
+  right: 9px;
+  top: -32px;
+  display: none;
+  font-size: 20px;
+}
+
+.online-medical .error-list {
+  display: none;
+}
+
+.online-medical .error .error-msg {
+  font-size: 13px;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  color: red;
+}
+
+.online-medical .error i.fa-check-circle-o {
+  color: green;
+}
+
+/* start online-medical section */
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Impressum Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+/*start breadcrumb*/
+.impressum .breadcrumb_bg {
+  background-image: url("../img/impressum-cover.jpg");
+}
+.services .breadcrumb_bg {
+  background-image: url("../img/services-cover.jpg");
+}
+
+/* end breadcrumb */
+/* start impressum */
+.impressum .wrapper .content {
+  margin-top: 40px;
+}
+
+.impressum .wrapper .content .head {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.impressum .wrapper .content .head h2 {
+  color: #0fb7dd;
+}
+
+.impressum .wrapper .content .head .doctor {
+  font-size: 600;
+  color: gray;
+  display: block;
+}
+
+.impressum .wrapper .content .head .specialty {
+  color: #aca8a8;
+}
+
+.impressum .wrapper .content .about-center {
+  margin-bottom: 40px;
+}
+
+.impressum .wrapper .content .about-center .box {
+  position: relative;
+  background: #fcfbfb;
+  border: 1px solid #cccccc59;
+  -webkit-box-shadow: 1px 1px 10px #cccccc94;
+  box-shadow: 1px 1px 10px #cccccc94;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  min-height: 370px;
+}
+
+.impressum .wrapper .content .about-center .box::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -2px;
+  right: -2px;
+  bottom: -5px;
+  -webkit-transform: skew(2deg, 2deg);
+  transform: skew(2deg, 2deg);
+  z-index: -1;
+  background: -webkit-gradient(linear, right top, left top, from(#9fd7e7), to(#c9c0ff));
+  background: linear-gradient(270deg, #9fd7e7, #c9c0ff);
+}
+
+.impressum .wrapper .content .about-center .box h3 {
+  color: #0fb7dd;
+  margin-bottom: 20px;
+}
+
+.impressum .wrapper .content .about-center .box span {
+  display: block;
+  color: #6c6969;
+  line-height: 2;
+}
+
+.impressum .wrapper .content .important {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.impressum .wrapper .content .important .background-content {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.impressum .wrapper .content .important .background-content img {
+  max-width: 900px;
+  height: 400px;
+}
+
+.impressum .wrapper .content .important .impressum-content {
+  position: relative;
+  z-index: 2;
+}
+
+.impressum .wrapper .content .important .impressum-content h3 {
+  color: #0fb7dd;
+}
+
+/* end impressum */
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Privacy policy Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+/* start breadcrumb */
+.privacy-policy .breadcrumb_bg {
+  background-image: url("../img/policy-cover.jpg");
+}
+
+/* end breadcrumb */
+/* start privacy-policy */
+.privacy-policy .wrapper .content {
+  margin-top: 40px;
+}
+
+.privacy-policy .wrapper .content .privacy-content {
+  margin-bottom: 40px;
+}
+
+.privacy-policy .wrapper .content .privacy-content .page-title {
+  color: #0fb7dd;
+}
+
+.privacy-policy .wrapper .content .privacy-content .main-title {
+  color: #72d4f0;
+}
+
+.privacy-policy .wrapper .content .privacy-content .sub-title {
+  color: #e6632b;
+}
+
+/* end privacy-policy */
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Team Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+/* start breadcrumb */
+.team .breadcrumb_bg {
+  background-image: url("../img/team-cover.jpg");
+}
+/* end breadcrumb */
+.team .wrapper .content .about-us {
+  margin-top: 40px;
+}
+
+.team .wrapper .content .about-us h2 {
+  margin-bottom: 30px;
+}
+
+.team .wrapper .content .about-us img {
+  width: 50%;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #ccc;
+  border-radius: 10px;
+}
+
+.team .wrapper .content .about-us .about-content {
+  padding: 40px;
+  color: #6c6969;
+  font-size: 15px;
+}
+
+.team .wrapper .content .about-us .about-content .dr-name {
+  color: #0fb7dd;
+  font-size: 18px;
+}
+
+.team .wrapper .content .about-us .about-content .btn {
+  padding: 10px 11px;
+  margin-top: 15px;
+  background-color: #0fb7dd;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+
+.team .wrapper .content .about-us .about-content .btn a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.team .wrapper .content .about-us .about-content .btn a:hover, .team .wrapper .content .about-us .about-content .btn a:focus {
+  text-decoration: none;
+}
+
+.team .wrapper .content .about-us .about-content .btn:hover {
+  background-color: #69d0f0;
+  color: #fff;
+}
+
+.team .wrapper .content .our-history h2 {
+  margin-bottom: 30px;
+}
+
+.team .wrapper .content .our-history .image {
+  text-align: center;
+}
+
+.team .wrapper .content .our-history .image img {
+  width: 100%;
+  height: 610px;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #ccc;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.team .wrapper .content .our-history .our-history-content {
+  color: #6c6969;
+  font-size: 14px;
+}
+
+.team .wrapper .content .our-history .our-history-content .dr-title {
+  color: #0fb7dd;
+}
+
+.team .wrapper .content .doctors {
+  margin: 50px auto;
+}
+
+.team .wrapper .content .doctors .doctors-row {
+  margin-bottom: 10px;
+}
+
+.team .wrapper .content .doctors .doctors-row .doctor {
+  background-color: #cccccc21;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  padding: 12px 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team .wrapper .content .doctors .doctors-row .doctor img {
+  width: 90%;
+  height: 80px;
+  border-radius: 10%;
+}
+
+.team .wrapper .content .doctors .doctors-row .doctor .doctor-data h5 {
+  padding-top: 11px;
+  font-size: 2rem;
+  color: #0fb7dd;
+}
+
+.team .wrapper .content .doctors .doctors-row .doctor .doctor-data span {
+  color: #868484;
+}
+
+/* ----------------------------------------------------------------------------------------
+* 01.Doctor Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+/* start breadcrumb */
+.doctor-p .breadcrumb_bg {
+  background-image: url("../img/team-cover.jpg");
+}
+/* end breadcrumb */
+.doctor-p .wrapper .content .our-history {
+  margin-top: 40px;
+}
+
+.doctor-p .wrapper .content .our-history h2 {
+  margin-bottom: 30px;
+}
+
+.doctor-p .wrapper .content .our-history .image {
+  text-align: center;
+}
+
+.doctor-p .wrapper .content .our-history .image img {
+  width: 100%;
+  height: 610px;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #ccc;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.doctor-p .wrapper .content .our-history .our-history-content {
+  color: #6c6969;
+  font-size: 14px;
+}
+
+.doctor-p .wrapper .content .our-history .our-history-content .dr-title {
+  color: #0fb7dd;
+}
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Blog Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+/* start breadcrumb */
+.blog-p .breadcrumb_bg {
+  background-image: url("../img/blog-cover.jpg");
+}
+
+/* end breadcrumb */
+
+.blog-p .wrapper .content{margin-top: 40px;}
+
+.blog-p .wrapper .content .blog-cards .item {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+  margin-bottom: 30px;
+  height: 275px;
+}
+
+.blog-p .wrapper .content .blog-cards .item .img-content img {
+  width: 100%;
+  max-height: 170px;
+}
+
+.blog-p .wrapper .content .blog-cards .item .caption-content {
+  padding: 5px 10px;
+}
+
+.blog-p .wrapper .content .blog-cards .item .caption-content h4 {
+  font-size: 1.6rem;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.blog-p .item .caption-content p {
+  color: #808080;
+  line-height: 23px;
+  letter-spacing: 0.3px;
+}
+
+.blog-p .item .caption-content .footer-info{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.blog-p .item .caption-content .footer-info i{color:#0fb7dd;}
+
+.blog-p .item .caption-content .footer-info span{color:#808080;}
+
+.blog-p .item .caption-content .footer-info a{
+  color:#0fb7dd;
+  font-size: 13.5px;
+}
+
+.blog-p .item .caption-content .footer-info a:hover{text-decoration: none;}
+
+.newnew .left .content{
+  height: 350px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 01.Blog-Show Page  CSS Style
+* ----------------------------------------------------------------------------------------
+*/
+.blog-show .wrapper .content{margin-top: 40px;}
+.blog-show .wrapper .content .doctor-blog{margin-bottom: 30px;}
+.blog-show .wrapper .content .doctor-blog .image img{width: 100%;}
+.blog-show .wrapper .content .doctor-blog .blog-content{margin-bottom: 20px;}
+.blog-show .wrapper .content .doctor-blog .blog-content h3{
+  color: #0fb7dd;
+  margin-bottom: 15px;
+}
+.blog-show .wrapper .content .doctor-blog .blog-content p,.blog-show .wrapper .content .doctor-blog .blog-content span{
+  color: #808080;
+  line-height: 23px;
+  letter-spacing: 0.3px;
+}
+.blog-show .wrapper .content .doctor-blog .blog-foot{
+  display: flex;
+  justify-content: space-between;
+}
+.blog-show .wrapper .content .doctor-blog .blog-foot .doc-name,.blog-show .wrapper .content .doctor-blog .blog-foot i{color: #0fb7dd;}
+
+.blog-show .wrapper .content .latest-posts h4{
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.blog-show .wrapper .content .latest-posts h5 a{color:#0fb7dd;}
+.blog-show .wrapper .content .latest-posts h5 a:hover{
+  color:#64c8df;
+  text-decoration: none;
+}
+.blog-show .wrapper .content .latest-posts .post{margin-bottom: 15px}
+.blog-show .wrapper .content .latest-posts .post img{width: 50px; height: 60px;}
+.blog-show .wrapper .content .latest-posts .post span{
+  font-size: 12px;
+  color: #555;
+  line-height: 23px;
+  letter-spacing: 0.3px;
+}
+.blog-show .wrapper .content .latest-posts .post .post-date{
+  display: block;
+  text-align: right;
+  font-size: 13px;
+}
+.blog-show .wrapper .content .latest-posts .post .post-date i{color: #0fb7dd;}
+.news-details .content p{
+  display: inline-block;
+}
+.news-details  .content a{
+  display:block;
+  width: 25%;
+}

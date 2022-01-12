@@ -1,0 +1,27 @@
+<?php
+$_['lang_labels_users_output']   = 'Benutzer';
+$_['lang_labels_username']       = 'Benutzername';
+$_['lang_labels_firstname']      = 'Vorname';
+$_['lang_labels_lastname']       = 'Nachname';
+$_['lang_labels_email']          = 'E-Mail';
+$_['lang_labels_group']          = 'Gruppenname';
+$_['lang_labels_subdate']        = 'Angemeldet am';
+$_['lang_labels_lastupdate']     = 'Letztes Update';
+$_['lang_labels_lastlogin']      = 'Letzte Anmeldung';
+$_['lang_labels_actions']        = 'Aktionen';
+$_['lang_labels_password']       = 'Passwort';
+$_['lang_labels_repassword']     = 'Re-Passwort';
+$_['lang_labels_usergroup']      = 'Benutzergruppe';
+$_['lang_labels_phone']          = 'Telefonnummer';
+$_['lang_labels_city']           = 'Stadt';
+$_['lang_labels_address']        = 'Adresse';
+$_['lang_labels_specialty']      = 'Spezialität';
+$_['lang_labels_dob']            = 'Geburtsdatum';
+$_['lang_labels_image']          = 'Bild';
+$_['lang_labels_userstatus']     = 'Kontostatus';
+$_['lang_labels_disabled']       = 'Deaktiviert';
+$_['lang_labels_enabled']        = 'Aktiviert';
+$_['lang_labels_about']          = 'Über (CV)';
+$_['lang_labels_legend']         = 'Persönliche Angaben';
+$_['lang_labels_create_btn']     = 'Hinzufügen';
+$_['lang_labels_update_btn']     = 'Aktualisieren';

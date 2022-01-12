@@ -1,0 +1,17 @@
+the email server not working in the contact and the mediceine page
+news in home page with fexid width
+the blog page is will be with aside
+the news is just the title will bw showung in tha page
+the image will be fist width and height
+
+
+//
+
+admin news contr
+$listedname = explode('|', trim($mdName, '|'));
+
+echo $mdName;
+
+foreach ($listedname as $on) {
+  echo '<p>' . $on . '</p>';
+}

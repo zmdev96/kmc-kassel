@@ -1,0 +1,20 @@
+<?php
+$_['lang_labels_blog_output']    = 'Blog';
+$_['lang_labels_title']          = 'Title';
+$_['lang_labels_image']          = 'Image (Cover Photo)';
+$_['lang_labels_content']        = 'Blog Content';
+$_['lang_labels_postdate']       = 'Publication date';
+$_['lang_labels_acceptdate']     = 'Approval date';
+$_['lang_labels_lastupdate']     = 'Last Update';
+$_['lang_labels_views']          = 'Views';
+$_['lang_labels_status']         = 'Status';
+$_['lang_labels_pending']        = 'Pending';
+$_['lang_labels_activated']      = 'Activated';
+$_['lang_labels_publisher']      = 'Publisher';
+$_['lang_labels_actions']        = 'Actions';
+$_['lang_labels_notes']          = 'Notes:';
+$_['lang_labels_notes_one']      = 'The field labeled Cover photo refers to the thumbnail that will appear on the blog on the main site.';
+$_['lang_labels_notes_tow']      = 'When attaching a picture in the article must first upload the image to the file manager and then copy the image link from the file manager and attach the link in the blog by pressing the right button of the mouse and then Insert.';
+$_['lang_labels_notes_three']    = 'Please take into account that the article will not be considered directly at the main site before the administrator approves it.';
+$_['lang_labels_create_btn']     = 'Create';
+$_['lang_labels_update_btn']     = 'Update';
